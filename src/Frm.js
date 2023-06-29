@@ -1,7 +1,18 @@
+// 2ND TASK 
+// It is a new file( Frm.js) which is part of 2nd task ( Crud operation)
+
+                                            
+ // It appears to be a form that allows users to add, update, and delete student data
+
+//  i have added CRUD in same repo (which is mentioned 2nd task)
+
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import './styles.css';
 
+
+ // HERE MAINLY 6 INPUT  which i added 
+ //  It Represents the form inputs state, including name, about, dob, gender, status, and education
 const Frm = () => {
   const [data, setData] = useState([]);
   const [formData, setFormData] = useState({
@@ -16,7 +27,7 @@ const Frm = () => {
   useEffect(() => {
     fetchData();
   }, []);
-
+// used  http://localhost:3002/api/data  for retrieving, adding, updating, and deleting student data
   const fetchData = async () => {
     try {
       const response = await axios.get('http://localhost:3002/api/data');
@@ -43,6 +54,7 @@ const Frm = () => {
     }
   };
 
+  
   const deleteData = async (id) => {
     try {
       await axios.delete(`http://localhost:3002/api/data/${id}`); 
