@@ -1,0 +1,326 @@
+/* /* "https://source.unsplash.com/user/random/sunny"  */
+{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.body{
+  width: 100vw; 
+   height: 100vh;
+    display: flex; 
+display:-ms-grid; 
+   justify-content: center;
+  align-items: center;
+   text-align: center; 
+   text-align:start;
+  background-image: url('8\ \(1\).png');
+  background-size:cover;
+  background-position:center;  
+  background-repeat:unset;
+  color:grey;
+}
+h1,h2{
+  margin: 4px;
+}
+h4{
+  margin: 0.4rem 0; 
+ } 
+
+.container{
+  width:70vw;
+  height: 75vh;
+  background-image: linear-gradient(rgba(0,0,5,0.9),rgba(5,5,5,0.2));
+   box-shadow: 0.5rem 0.5rem 0.8rem black; 
+    box-shadow: 0.1rem 0.5rem 0.8rem lightskyblue;
+  display:inherit;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column; 
+   padding: 1rem;
+  border-radius: 0.5rem;
+}
+
+@media screen and (min-width:400px) {
+  .container{
+      width: 300px;
+  }
+
+  
+}
+@media screen and (max-width:400px){
+  .body{
+  background-image: url('8\ \(1\).png');
+  background-size:cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  }
+}
+
+.form{
+  margin:  1rem 0 0  0 ; 
+   display: inline-block;
+  padding: 0.5rem;
+  font-size: 1em;
+  background-color: black;
+  font-weight: bold;
+  border-radius: 0.9rem;
+  color: white;
+  
+}
+.city-input{
+  border:none;
+  background-color: black;
+  color: white;
+}
+.temp-info{
+  text-align: left;
+}
+
+#icon{
+  font-size: 4rem;
+  animation: move 4s linear infinite;
+}
+@keyframes move {
+  0%{
+       transform: translateX(0px)
+  } 
+   50%{
+       transform: translateX(50px)
+  }
+  98%{
+       transform: translateX(0px)
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.form-container {
+  width: 40%;
+} 
+
+ .data-container {
+  width: 50%;
+}
+
+.data-item {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+} 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+ Style the API endpoint sections */
+ .endpoint {
+  margin-bottom: 20px;
+}
+
+.endpoint h2 {
+  color: #333;
+  font-size: 18px;
+  margin-bottom: 10px;
+} 
+
+.endpoint p {
+  color: #666;
+  font-size: 14px;
+}
+
+.endpoint button {
+  background-color: #3498db;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 14px;
+  cursor: pointer;
+} 
+
+ .endpoint button:hover {
+  background-color: #2980b9;
+}
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+.data-container {
+  border: 1px solid #ccc;
+  padding: 20px;
+}
+
+.data-item {
+  margin-bottom: 20px;
+  padding: 100px;
+  border: 1px solid #ddd;
+}
+
+.data-item p {
+  margin: 10px 30px;
+}
+
+.data-item div {
+  margin-top: 10px;
+}
+
+.data-item button {
+  padding: 5px 10px;
+  margin-right: 10px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+.data-item button:hover {
+  background-color: #0056b3;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap:wrap;
+  gap: 200px;
+}
+
+.form-container {
+  background-color: #efe1e1;
+  padding: 70px;
+  border-radius: 30px;
+  box-shadow: 0 2px 4px rgba(225, 29, 29, 0.1);
+}
+
+.form-container h2 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.form-container input,
+.form-container select {
+  width: 100;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.form-container button {
+  background-color: #3498db;
+  color: #f6efef;
+  border: none;
+  padding: 10px 20px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.form-container button:hover {
+  background-color: #2980b9;
+}
+
+.data-container {
+  width: 300%;
+  max-height: 400px; /* Set a maximum height for the container */
+  overflow-y: auto; /* Enable vertical scrolling */
+}
+
+.data-container h2 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.data-item {
+  background-color: #efeded;
+  padding: 20px;
+  margin-bottom: 10px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.data-item p {
+  margin: 20;
+  justify-content: right;
+  align-items: right;
+  margin-bottom: 5px;
+}
+
+.data-item button {
+  background-color: #e74c3c;
+  color: #fff;
+  border: none;
+  padding: 5px 10px;
+  font-size: 12px;
+  margin-right: 5px;
+  cursor: pointer;
+}
+
+.data-item button:hover {
+  background-color: #c0392b;
+}
