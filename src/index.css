@@ -1,4 +1,4 @@
-/* /* "https://source.unsplash.com/user/random/sunny"  */
+/*  CSS FOR 1st task (Weather app) */
 {
   margin: 0;
   padding: 0;
@@ -132,7 +132,7 @@ h4{
 
 
 
-
+/*  CSS FOR 2nd task (Crud operation) */
 
 
 
@@ -176,18 +176,6 @@ body {
 }
  
 
-
-
-
-
-
-
-
-
-
-
-
-
 .data-container {
   border: 1px solid #ccc;
   padding: 20px;
@@ -218,30 +206,6 @@ body {
 
 .data-item button:hover {
   background-color: #0056b3;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 .container {
   display: flex;
@@ -287,8 +251,9 @@ body {
 
 .data-container {
   width: 300%;
-  max-height: 400px; /* Set a maximum height for the container */
-  overflow-y: auto; /* Enable vertical scrolling */
+  
+  max-height: 400px; 
+  overflow-y: auto;
 }
 
 .data-container h2 {
