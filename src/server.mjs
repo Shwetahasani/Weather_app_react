@@ -1,28 +1,34 @@
+// 2ND TASK (CRUD OPERATION)**
+// It starts listening on port 3002 with app.listen(PORT, callback) Once the server is running,  
+
+
+// try " npm run server " Before "npm start"***************************
+
+
 import express from 'express';
 import cors from 'cors';
-
+ // two dependies i used cors & express
 const app = express();
 const PORT = 3002;
 
-let data = []; // Placeholder for storing the data
+let data = []; 
 
-app.use(express.json());
+ app.use(express.json());    //JSON (parsing) for updated req
 app.use(cors());
 
-// Get all data
+
 app.get('/api/data', (req, res) => {
   res.json(data);
 });
 
-// Add data
 app.post('/api/data', (req, res) => {
   const newItem = req.body;
-  newItem.id = generateId(); // Generate a unique ID for the new item
+  newItem.id = generateId(); 
   data.push(newItem);
   res.status(201).json(newItem);
 });
 
-// Update data
+
 app.put('/api/data/:id', (req, res) => {
   const itemId = req.params.id;
   const updatedItem = req.body;
@@ -35,7 +41,7 @@ app.put('/api/data/:id', (req, res) => {
   }
 });
 
-// Delete data
+
 app.delete('/api/data/:id', (req, res) => {
   const itemId = req.params.id;
   const index = data.findIndex((item) => item.id === itemId);
@@ -51,7 +57,7 @@ const server = app.listen(PORT, () => {
   console.log(`Server is running on port ${PORT}`);
 });
 
-// Helper function to generate a unique ID
+
 function generateId() {
   return Math.random().toString(36).substr(2, 9);
 }
