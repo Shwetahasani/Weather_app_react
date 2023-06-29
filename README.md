@@ -30,8 +30,8 @@ education  }
  CRUD (Create, Read, Update, Delete) operations. It allows users to manage Student data, including adding new data, updating existing data, and deleting data.
    I have added two file in this project  (Frm.js) and (Server.js)
 Technologies- 
-React: A JavaScript library for building user interfaces.
-Express: A web application framework for Node.js.
-Axios: A promise-based HTTP client for making API requests.
-CORS: A middleware for enabling Cross-Origin Resource Sharing.
-JSON: A data format used for storing weather data.
+->React:
+->Express
+->Axios: A promise-based HTTP client for making API requests.
+->CORS: A middleware for enabling Cross-Origin Resource Sharing.
+->JSON: A data format used for storing weather data.
