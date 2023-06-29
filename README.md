@@ -1,3 +1,5 @@
+
+ # 1ST TASK**
 # Weather_App
 React application that displays the current weather conditions in a given location.
 
@@ -9,8 +11,27 @@ The Weather App is a web application built using React.js. It utilizes a weather
 3.If the user enters an invalid location, an appropriate error message is displayed.
 4.The app is built using React components to ensure a modular and scalable architecture.
 
-# Technologies Used
+# Technologies -
 -> React.js
 -> JavaScript
 -> HTML
 -> CSS
+
+  #  2nd task**
+ { add CRUD in home page in same repo
+ add ajax form with below fields:
+name
+about
+dob
+gender
+status
+education  }
+
+ CRUD (Create, Read, Update, Delete) operations. It allows users to manage Student data, including adding new data, updating existing data, and deleting data.
+   I have added two file in this project  (Frm.js) and (Server.js)
+Technologies- 
+React: A JavaScript library for building user interfaces.
+Express: A web application framework for Node.js.
+Axios: A promise-based HTTP client for making API requests.
+CORS: A middleware for enabling Cross-Origin Resource Sharing.
+JSON: A data format used for storing weather data.
